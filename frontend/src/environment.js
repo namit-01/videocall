@@ -1,6 +1,4 @@
 let IS_PROD = false;
-const server = IS_PROD
-  ? "https://videocall-qyj6.onrender.com"
-  : "http://localhost:8000";
+const server = "https://videocall-qyj6.onrender.com";
 
 export default server;
