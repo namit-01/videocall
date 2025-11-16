@@ -18,7 +18,7 @@ const login = async (req, res) => {
         .status(httpStatus.NOT_FOUND)
         .json({ message: "User Not Found" });
     }
-
+    console.log("loged in ");
     let isPasswordCorrect = await bcrypt.compare(password, user.password);
 
     if (isPasswordCorrect) {
